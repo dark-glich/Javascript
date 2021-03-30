@@ -9,8 +9,8 @@ const pi = 3.14;
 console.log(pi);
 
 /*let is used to asign a variable in a specific scope
-you cannot redeclare a variable with same twice using let keyword 
-but you can edeclare a variable with same twice using var keyword
+you cannot redeclare a variable with same name twice using let keyword 
+but you can edeclare a variable with same name twice using var keyword
 */
 let my_name = 'no one';
 console.log(my_name);

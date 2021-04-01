@@ -14,7 +14,7 @@
     <div class="main">
         <div class="blank"></div>
         <div class="clac">
-            <input class="answer-field" id="field" type="text">
+            <input class="answer-field" id="field" onchange="string_detect()" type="text">
             <div class="keyholder">
                 <button class="key operator" onclick="operator('+')" id="plus">+</button>
                 <button class="key operator" onclick="operator('−')" id="minus">−</button>
@@ -33,6 +33,7 @@
                 <button class="key" id="3" onclick="num(3)">3</button>
                 <button class="key" id="0" onclick="num(0)">0</button>
                 <button class="key" id="clear" onclick="ClearAll()">AC</button>
+                <button class="key" id="clear" onclick="ClearOne()">C</button>
             </div>
         </div>
         <div class="blank"></div>

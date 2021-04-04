@@ -16,24 +16,24 @@
         <div class="clac">
             <input class="answer-field" id="field" onchange="string_detect()" type="text">
             <div class="keyholder">
-                <button class="key operator" onclick="operator('+')" id="plus">+</button>
-                <button class="key operator" onclick="operator('−')" id="minus">−</button>
-                <button class="key operator" onclick="operator('×')" id="multiply">×</button>
-                <button class="key operator" onclick="operator('÷')" id="divide">÷</button>
-                <button class="key" id="7" onclick="num(7)">7</button>
-                <button class="key" id="8" onclick="num(8)">8</button>
-                <button class="key" id="9" onclick="num(9)">9</button>
+                <button class="key operator" onclick="OperatorKeyPressed('+')" id="plus">+</button>
+                <button class="key operator" onclick="OperatorKeyPressed('−')" id="minus">−</button>
+                <button class="key operator" onclick="OperatorKeyPressed('×')" id="multiply">×</button>
+                <button class="key operator" onclick="OperatorKeyPressed('÷')" id="divide">÷</button>
+                <button class="key" id="7" onclick="NumberKeyPressed(7)">7</button>
+                <button class="key" id="8" onclick="NumberKeyPressed(8)">8</button>
+                <button class="key" id="9" onclick="NumberKeyPressed(9)">9</button>
                 <button class="key operator" onclick="decimal()" id="decimal" >.</button>
-                <button class="key" id="4" onclick="num(4)">4</button>
-                <button class="key" id="5" onclick="num(5)">5</button>
-                <button class="key" id="6" onclick="num(6)">6</button>
-                <button class="key operator" onclick="answer()" id="equalsto">=</button>
-                <button class="key" id="1" onclick="num(1)">1</button>
-                <button class="key" id="2" onclick="num(2)">2</button>
-                <button class="key" id="3" onclick="num(3)">3</button>
-                <button class="key" id="0" onclick="num(0)">0</button>
-                <button class="key" id="clear" onclick="ClearAll()">AC</button>
-                <button class="key" id="clear" onclick="ClearOne()">C</button>
+                <button class="key" id="4" onclick="NumberKeyPressed(4)">4</button>
+                <button class="key" id="5" onclick="NumberKeyPressed(5)">5</button>
+                <button class="key" id="6" onclick="NumberKeyPressed(6)">6</button>
+                <button class="key operator" onclick="AnswerKeyPressed()" id="equalsto">=</button>
+                <button class="key" id="1" onclick="NumberKeyPressed(1)">1</button>
+                <button class="key" id="2" onclick="NumberKeyPressed(2)">2</button>
+                <button class="key" id="3" onclick="NumberKeyPressed(3)">3</button>
+                <button class="key" id="0" onclick="NumberKeyPressed(0)">0</button>
+                <button class="key" id="clear" onclick="ClearAllPressed()">AC</button>
+                <button class="key" id="clear" onclick="ClearKeyPressed()">C</button>
             </div>
         </div>
         <div class="blank"></div>

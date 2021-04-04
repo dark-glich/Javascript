@@ -25,8 +25,9 @@ body{
     height: 15vh;
     outline: none;
     border: 2px solid #3f5258;
+    color:#273438;
     border-radius: 6px;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: 'Varela Round', sans-serif;
 }
 .keyholder{

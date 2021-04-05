@@ -1,0 +1,71 @@
+$PrimaryColor :#334A52;
+$SecondaryColor : #00D7FF;
+$mainfont:'Varela Round', sans-serif;
+::selection{
+    background-color: transparent;
+    color:rgb(255, 255, 255);
+}
+body{
+    font-family: $mainfont;
+    background-color: $PrimaryColor;
+}
+
+.container{
+    position: absolute;
+    height:75%;
+    width:50%;
+    left:25%;
+    top:13%;
+    background-color: $PrimaryColor;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #2e434a, #374f58);
+    box-shadow:  19px 19px 38px #2d4249,
+                 -19px -19px 38px #39525b;
+}
+.timer{
+    font-family: $mainfont;
+    position: absolute;
+    left:20%;
+    top:23%;
+    color:white;
+    font-size: 4rem;
+
+}
+.names{
+    font-family: $mainfont;
+    position: absolute;
+    left:23%;
+    word-spacing: 4.5rem;
+    top:40%;
+    color:rgba(255, 255, 255, 0.466);
+}
+
+.buttons{
+    position: absolute;
+    top: 70%;
+    left: 3.5%;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+
+    .btn{
+        border:none;
+        margin-left: 3.8rem;
+        font-size: 1rem;
+        color:white;
+        border-radius: 10px;
+        width: 100px;
+        height:50px;
+        background-color: #273438;
+        font-family: 'Varela Round', sans-serif;
+        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25), 0px 6px 6px rgba(0, 0, 0, 0.25), 0px 6px 6px rgba(0, 0, 0, 0.25);
+    
+        &:hover{
+            box-shadow: none;
+        }
+    }
+    
+    #startbtn{
+        background-color: $SecondaryColor;
+    }
+    
+}

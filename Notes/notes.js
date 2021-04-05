@@ -24,10 +24,10 @@ var a = 10;
 
 var sum = 10 % 10;
 // increment a number by 1
-sum ++
+sum++
 console.log(sum);
 // str can start with `` , "" , '' in javascript
-var str=`'hello' how are "you"`;
+var str = `'hello' how are "you"`;
 console.log(str);
 // getring len of str using .lenght 
 var len;
@@ -39,7 +39,7 @@ str = 'Hello';
 str = str[str.length - 1]
 console.log(str)
 //functions
-function madlimb(a, b, c, d){
+function madlimb(a, b, c, d) {
     var sentence = a + " " + b + c + d
     return sentence
 };
@@ -61,15 +61,15 @@ it will become a local variable but if assign a variable without using a var
 it will become global variable
 */
 var a = 10
-function func(){
+function func() {
     //if else statement
-    if(a != 9){
+    if (a != 9) {
         console.log('a : ' + a)
     }
 }
 func()
-function torf(a){
-    if(a){
+function torf(a) {
+    if (a) {
         return 'a is True'
     }
     return 'a is False'
@@ -84,45 +84,45 @@ for example: (1 === '1') is false
 for example: (1 == "2") is true
 And '!==' or strict equality operator compare value as well as the type
 for example: (1 !== '1') is true
-*/ 
-function check(a){
-    if (a == 1){
+*/
+function check(a) {
+    if (a == 1) {
         console.log("True")
     }
-    if (a === 1){
+    if (a === 1) {
         console.log("True")
     }
 }
 check('1')
 //&& = and
 var a = 5
-if(a <= 10 && a > 4){
+if (a <= 10 && a > 4) {
     console.log('Yes')
 }
 // '||' = or
 
-if (a < 10 || a > 4){
+if (a < 10 || a > 4) {
     console.log('Yes')
 }
 //if else statement
-if (a < 2){
+if (a < 2) {
     console.log('smaller')
-}else{
+} else {
     console.log("larger")
 }
 // else if statment
 
-if (a > 6){
+if (a > 6) {
     console.log("greater than 6 !!!")
-}else if(a < 4){
+} else if (a < 4) {
     console.log("smaller than 4 !!!")
-}else{
+} else {
     console.log("number is 5 !!!!!!")
 }
 // The switch statement is used to perform different actions based on different conditions.
-function check(x){
+function check(x) {
     var a = null;
-    switch(x){
+    switch (x) {
         case 1:
             a = 'odd';
             break;// it breaks out of the switch block.
@@ -147,19 +147,19 @@ function check(x){
 }
 console.log(check(11))
 
-function div(a, b){
-    if(a < 0 || b < 0){
+function div(a, b) {
+    if (a < 0 || b < 0) {
         return undefined
-    }else{
+    } else {
         return a / b
     }
 }
 console.log(div(8, 2));
 
 var myobj = {
-    'name': "bilal", 
-    'age':15,
-    'my hobby':"programming" 
+    'name': "bilal",
+    'age': 15,
+    'my hobby': "programming"
 }
 // accessing object using dot notation
 console.log(myobj.name)
@@ -175,21 +175,21 @@ console.log(myobj);
 // checking property in object
 console.log(myobj.hasOwnProperty('name'));
 
-function prop(x){
-    if (myobj.hasOwnProperty(x)){
+function prop(x) {
+    if (myobj.hasOwnProperty(x)) {
         return myobj[x]
-    }else{
+    } else {
         return 'Not Found'
     }
 }
 console.log(prop('my hobby'))
 
 
-function multiply(array){
+function multiply(array) {
     var total = 1
     // Nested For Loop
-    for(var i = 0; i < array.length; i++){
-        for (var j = 0; j < array[i].length; j++){
+    for (var i = 0; i < array.length; i++) {
+        for (var j = 0; j < array[i].length; j++) {
             total *= array[i][j]
         }
     }
@@ -204,19 +204,19 @@ the condition where as while loops first check the condition then executes
 var my_array = [20]
 var a = 10
 
-do{
+do {
     my_array.push(a)
     a++
-}while(a < 5)
+} while (a < 5)
 
-console.log(a , my_array)
+console.log(a, my_array)
 
-function random(type){
-    if (type == "fraction"){
+function random(type) {
+    if (type == "fraction") {
         var random = Math.random()
-    }else if(type == "whole number"){
+    } else if (type == "whole number") {
         var random = Math.floor(Math.random() * 100)
-    }else{
+    } else {
         random = "Choose between fraction or whole number"
     }
     return random
@@ -233,22 +233,28 @@ console.log(str);
 /*Ternary operator is a single line if else statement 
 condition ? if true statement : if false statement; 
 */
-function ternary(a){
-    return a % 2 == 0? a + " is divisible by two" : a + " is not divisible by two";
+function ternary(a) {
+    return a % 2 == 0 ? a + " is divisible by two" : a + " is not divisible by two";
 }
 console.log(ternary(12));
 
 //anonymous functions
-var func = function(){
+var func = function () {
     return "hello world"
 }
 console.log(func())
 //arrow functions are one line functions for single tasks
 // var function_name = (arguments) => return statement
-var func = (a, b) => a*b;
+var func = (a, b) => a * b;
 console.log(func(2, 4))
 //args - In javasrcipt we add args using ...args
-function funct(...args){
+function funct(...args) {
     return "args " + args
 }
+
 console.log(funct(2, 3, 4, 5))
+// Anonymous Function
+func = function (parameter) {
+    console.log(parameter)
+}
+func("Bilal is Awesome")

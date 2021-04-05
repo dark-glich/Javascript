@@ -1,0 +1,79 @@
+::-moz-selection {
+  background-color: transparent;
+  color: white;
+}
+
+::selection {
+  background-color: transparent;
+  color: white;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+  background-color: #334A52;
+}
+
+.container {
+  position: absolute;
+  height: 75%;
+  width: 50%;
+  left: 25%;
+  top: 13%;
+  background-color: #334A52;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #2e434a, #374f58);
+  -webkit-box-shadow: 19px 19px 38px #2d4249, -19px -19px 38px #39525b;
+          box-shadow: 19px 19px 38px #2d4249, -19px -19px 38px #39525b;
+}
+
+.timer {
+  font-family: "Varela Round", sans-serif;
+  position: absolute;
+  left: 20%;
+  top: 23%;
+  color: white;
+  font-size: 4rem;
+}
+
+.names {
+  font-family: "Varela Round", sans-serif;
+  position: absolute;
+  left: 23%;
+  word-spacing: 4.5rem;
+  top: 40%;
+  color: rgba(255, 255, 255, 0.466);
+}
+
+.buttons {
+  position: absolute;
+  top: 70%;
+  left: 3.5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33.3% 33.3% 33.3%;
+      grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.buttons .btn {
+  border: none;
+  margin-left: 3.8rem;
+  font-size: 1rem;
+  color: white;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  background-color: #273438;
+  font-family: 'Varela Round', sans-serif;
+  -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25), 0px 6px 6px rgba(0, 0, 0, 0.25), 0px 6px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25), 0px 6px 6px rgba(0, 0, 0, 0.25), 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+.buttons .btn:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.buttons #startbtn {
+  background-color: #00D7FF;
+}
+/*# sourceMappingURL=main.css.map */

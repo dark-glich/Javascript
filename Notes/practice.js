@@ -30,3 +30,4 @@ function ScaleneTriangleArea(a, b, c) {
 }
 console.log(ScaleneTriangleArea(11, 12, 13))
 
+// FizzBuzz Code

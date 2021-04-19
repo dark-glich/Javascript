@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Password Generator</title>
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="main.css">
+     <script src="main.js"></script>
+</head>
+
+<body>
+     <div class="container">
+          <div class="setting">
+               <div class="lenght">
+                    <label> Enter Password Lenght</label>
+                    <input type="text" id="input" placeholder="Maximun : 100">
+               </div>
+
+               <div class="lenght">
+                    <label> Number of Passwords</label>
+                    <input type="text" id="input" style="margin-left: 20px;" placeholder="Maximum : 6">
+               </div>
+
+               <div class="symbol">
+                    <label> Include Special Symbols</label>
+                    <input type="checkbox" name="symbol" value="Symbol" class="tickmark" style="margin-left:8.45%;" checked>
+               </div>
+
+               <div class="number">
+                    <label> Include Positive Numbers</label>
+                    <input type="checkbox" name="number" value="number" class="tickmark" style="margin-left:6.3%;" checked>
+               </div>
+
+               <div class="lowercase">
+                    <label> Include Lowercase Letters</label>
+                    <input type="checkbox" name="lowercase" value="lowercase" class="tickmark" id="lowercase" checked>
+               </div>
+
+               <div class="uppercase">
+                    <label> Include Uppercase Letters</label>
+                    <input type="checkbox" name="uppercase" value="uppercase" class="tickmark" id="uppercase">
+               </div>
+          </div>
+
+          <div class="password">
+               <div class="password-layout">
+                    <span class="holder">
+                         <div> Click to generate password</div>
+                    </span>
+                    <button type="submit">Generate</button>
+               </div>
+          </div>
+     </div>
+
+     <div class="error">Error!!</div>
+</body>
+
+</html>

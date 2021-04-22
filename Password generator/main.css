@@ -1,6 +1,22 @@
+::-moz-selection {
+  background-color: #2c2c2c;
+  color: white;
+  line-height: 10cm;
+}
+
+::selection {
+  background-color: #2c2c2c;
+  color: white;
+  line-height: 10cm;
+}
+
 body {
   font-family: 'Rubik', sans-serif;
   background: #deecfa;
+}
+
+hr {
+  width: 70%;
 }
 
 .container {
@@ -29,7 +45,7 @@ body {
   word-spacing: 2px;
 }
 
-#input {
+.input {
   margin-left: 2%;
   border: none;
   width: 25%;
@@ -43,7 +59,7 @@ body {
   transition: 0.5s  ease;
 }
 
-#input:focus {
+.input:focus {
   width: 45%;
 }
 
@@ -53,14 +69,6 @@ input[type="checkbox" i] {
   background-color: #00aeff;
 }
 
-.password {
-  background-color: #00aeffb9;
-  height: 500px;
-  margin: 20px;
-  margin-left: 30px;
-  border-radius: 30px;
-}
-
 .password-layout {
   margin: 10%;
   text-align: center;
@@ -68,19 +76,23 @@ input[type="checkbox" i] {
 
 .holder {
   background-color: white;
-  width: 350px;
+  width: 500px;
   height: 1.3rem;
   display: inline-block;
   color: rgba(70, 70, 70, 0.705);
   font-size: 1rem;
-  border-radius: 20px;
+  border-radius: 10px;
   margin-bottom: 10px;
   word-wrap: 1;
+  color: 'rgb(44, 44, 44)';
+  font-size: '0.7rem';
   text-align: center;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   line-height: 40px;
+  -webkit-transition: all 0.5s  ease;
+  transition: all 0.5s  ease;
 }
 
 button {
@@ -100,8 +112,11 @@ button {
 }
 
 button:hover {
+  padding: 6px;
+  padding: 0px 40px;
   background-color: white;
   color: #2c2c2c;
+  border: 3px solid #2c2c2c;
 }
 
 .error {
@@ -114,5 +129,18 @@ button:hover {
   background-color: rgba(246, 69, 69, 0.836);
   padding: 10px 10px;
   display: none;
+}
+
+#CopyBtn {
+  background-color: #00aeff;
+  color: white;
+  padding: 0px 25px;
+}
+
+#CopyBtn:hover {
+  background-color: white;
+  border: 3px solid #00aeff;
+  color: #00aeff;
+  padding: 0px 40px;
 }
 /*# sourceMappingURL=main.css.map */

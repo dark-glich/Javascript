@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="title" content="PassIt">
+     <meta name="description" content="password generator">
+     <meta name="keywords" content="password, password generator, generator">
+     <meta name="robots" content="index, follow">
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+     <meta name="language" content="English">
      <title>Password Generator</title>
      <link rel="preconnect" href="https://fonts.gstatic.com">
      <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="main.css">
-     <script src="main.js"></script>
 </head>
 
 <body>
@@ -17,46 +21,48 @@
           <div class="setting">
                <div class="lenght">
                     <label> Enter Password Lenght</label>
-                    <input type="text" id="input" placeholder="Maximun : 100">
+                    <input type="number" min="1" max="70" step="5" id="lenght" class="input" placeholder="Max : 70">
                </div>
 
                <div class="lenght">
                     <label> Number of Passwords</label>
-                    <input type="text" id="input" style="margin-left: 20px;" placeholder="Maximum : 6">
+                    <input id="times" type="number" min="1" max="6" step="1" class="input" style="margin-left: 20px;" placeholder="Max : 8">
                </div>
 
                <div class="symbol">
                     <label> Include Special Symbols</label>
-                    <input type="checkbox" name="symbol" value="Symbol" class="tickmark" style="margin-left:8.45%;" checked>
+                    <input type="checkbox" id="symbol" name="symbol" value="Symbol" class="tickmark" style="margin-left:8.45%;" checked>
                </div>
 
                <div class="number">
                     <label> Include Positive Numbers</label>
-                    <input type="checkbox" name="number" value="number" class="tickmark" style="margin-left:6.3%;" checked>
+                    <input type="checkbox" id="number" name="number" value="number" class="tickmark" style="margin-left:6.3%;" checked>
                </div>
 
                <div class="lowercase">
                     <label> Include Lowercase Letters</label>
-                    <input type="checkbox" name="lowercase" value="lowercase" class="tickmark" id="lowercase" checked>
+                    <input type="checkbox" id="lowercase" name="lowercase" value="lowercase" class="tickmark" id="lowercase" checked>
                </div>
 
                <div class="uppercase">
                     <label> Include Uppercase Letters</label>
-                    <input type="checkbox" name="uppercase" value="uppercase" class="tickmark" id="uppercase">
+                    <input type="checkbox" id="uppercase" name="uppercase" value="uppercase" class="tickmark" id="uppercase" checked>
                </div>
           </div>
 
           <div class="password">
                <div class="password-layout">
-                    <span class="holder">
+                    <span class="holder" id="holder">
                          <div> Click to generate password</div>
                     </span>
-                    <button type="submit">Generate</button>
+                    <button type="submit" id="generateBtn">Generate</button>
+                    <button type="submit" id="CopyBtn" style="display:none;">Copy</button>
                </div>
           </div>
      </div>
 
-     <div class="error">Error!!</div>
+     <div class="error" id="Error">Error!!</div>
+     <script src="main.js"></script>
 </body>
 
 </html>

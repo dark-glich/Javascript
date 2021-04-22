@@ -1,8 +1,18 @@
 $PrimaryColor :#00aeff;
 
+::selection{
+     background-color:rgb(44, 44, 44);
+     color:white;
+     line-height:10cm;
+}
+
 body{
      font-family: 'Rubik', sans-serif;
      background:rgb(222, 236, 250);
+}
+
+hr{
+     width:70%;
 }
 .container{
      display:grid;
@@ -25,7 +35,7 @@ body{
      word-spacing: 2px;
 }
 
-#input{
+.input{
      margin-left: 2%;
      border:none;
      width:25%;
@@ -37,7 +47,7 @@ body{
      text-align: center;
      transition: 0.5s  ease;
 }
-#input:focus{
+.input:focus{
      width:45%;
 }
 
@@ -47,30 +57,27 @@ input[type="checkbox" i]{
      background-color:$PrimaryColor;
 }
 
-.password{
-     background-color: #00aeffb9;
-     height:500px;
-     margin:20px;
-     margin-left:30px;
-     border-radius: 30px;
-}
+
 .password-layout{
      margin:10%;
      text-align:center;
 }
 .holder{
      background-color: rgb(255, 255, 255);
-     width:350px;
+     width:500px;
      height:1.3rem;
      display:inline-block;
      color:rgba(70, 70, 70, 0.705);
      font-size: 1rem;
-     border-radius: 20px;
+     border-radius: 10px;
      margin-bottom: 10px;
      word-wrap: 1;
+     color : 'rgb(44, 44, 44)';
+     font-size:'0.7rem';
      text-align: center;
      height:max-content;
      line-height: 40px;
+     transition: all 0.5s  ease;
 }
 button{
      outline:none;
@@ -87,8 +94,11 @@ button{
      font-family: 'Rubik', sans-serif;
 }
 button:hover{
+     padding:6px;
+     padding:0px 40px;
      background-color: white;
      color:rgb(44, 44, 44);
+     border:3px solid rgb(44, 44, 44);
 }
 .error{
      position: fixed;
@@ -100,4 +110,16 @@ button:hover{
      background-color:rgba(246, 69, 69, 0.836);
      padding:10px 10px;
      display:none;
+}
+
+#CopyBtn{
+     background-color:$PrimaryColor;
+     color:white;
+     padding:0px 25px;
+}
+#CopyBtn:hover{
+     background-color: white;
+     border:3px solid $PrimaryColor;
+     color:$PrimaryColor;
+     padding:0px 40px;
 }
